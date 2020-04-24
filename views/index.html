@@ -1,0 +1,267 @@
+<doctype html>
+  <html>
+    <head>
+      <title></title> 
+      <link rel='stylesheet' href='/css/style.css'>
+      <link rel='stylesheet' href='/css/lightbox.min.css'>
+      <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="/js/lightbox-plus-jquery.min.js"></script>
+      <script src="/js/index.js"></script>
+    </head>    
+    <body>
+      <main>
+        <div class='header-main'>
+        <p> <a href="">Firma Zenelaj</a> </p>
+        <div class="header-right">
+          <p> <a href="#content-b">Galeria</a> </p>
+        <p> <a href="#content-c">Rreth Nesh</a> </p>
+        <p> <a href="#content-c">Kontakte</a> </p>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="/images/language.png">
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Shqip</a>
+            <a href="#">English</a>      
+          </div>
+        </div>
+
+        </div>
+        </div>   
+        <div class='content'>
+          <div class='content-a' id='content-a'>
+            <div class='content-a-div'>
+              <img src="/images/stone.png">
+              <p>Punime mermeri dhe graniti</p>
+            </div>
+            <div class='content-a-div'>
+              <img src="/images/quality.png">
+              <p>Cilësi e garantuar</p>
+            </div>
+            <div class='content-a-div'>
+              <img src="/images/price.png">
+              <p>Çmime të arsyeshme</p>
+            </div>
+            <div class='content-a-div'>
+              <img src="/images/details.png">
+              <p>Kujdes në detaje</p>
+            </div>
+            <div class='content-a-div'>
+              <img src="/images/deadlines.png">
+              <p>Përmbushje brenda afatit</p>
+            </div>
+          </div>
+
+          <div class="content-b" id='content-b'>
+            <div class='radio-buttons'>
+
+                  <input type="radio" id="projects" name="choices" onclick="change_galleries()">
+                  <label>Projekte</label>                    
+                  <input type="radio" id="samples" name="choices" checked=True onclick="change_galleries()">
+                  <label>Materiale</label>
+                
+              </form>
+            </div>
+
+            <div class='gallery-outer'>
+              
+              <div class='gallery' id="gallery">
+                <div>
+                  <a href="/images/sample_1.jpg" data-lightbox="mygallery"><img src="/images/sample_1_small.jpg"></a>
+                  <p>Materiali A</p>
+                </div>
+                <div>
+                  <a href="/images/sample_2.jpg" data-lightbox="mygallery"><img src="/images/sample_2_small.jpg"></a>
+                  <p>Materiali B</p>
+                </div>
+                <div>
+                  <a href="/images/sample_3.jpg" data-lightbox="mygallery"><img src="/images/sample_3_small.jpg"></a>
+                  <p>Materiali C</p>
+                </div>
+                <div>
+                  <a href="/images/sample_4.jpg" data-lightbox="mygallery"><img src="/images/sample_4_small.jpg"></a>
+                  <p>Materiali D</p>
+                </div>
+                <div>
+                  <a href="/images/sample_5.jpg" data-lightbox="mygallery"><img src="/images/sample_5_small.jpg"></a>
+                  <p>Materiali E</p>
+                </div>
+                <div>
+                  <a href="/images/sample_6.jpg" data-lightbox="mygallery"><img src="/images/sample_6_small.jpg"></a>
+                  <p>Materiali F</p>
+                </div>
+                <div>
+                  <a href="/images/sample_7.jpg" data-lightbox="mygallery"><img src="/images/sample_7_small.jpg"></a>
+                  <p>Materiali G</p>
+                </div>
+                <div>
+                  <a href="/images/sample_8.jpg" data-lightbox="mygallery"><img src="/images/sample_8_small.jpg"></a>
+                  <p>Materiali H</p>
+                </div>
+                <div>
+                  <a href="/images/sample_9.jpg" data-lightbox="mygallery"><img src="/images/sample_9_small.jpg"></a>
+                  <p>Materiali I</p>
+                </div>
+                <div>
+                  <a href="/images/sample_2.jpg" data-lightbox="mygallery"><img src="/images/sample_2_small.jpg"></a>
+                  <p>Materiali J</p>
+                </div>
+              </div>          
+              
+            </div>
+          </div>
+
+          <div class="content-c" id='content-c'>
+            <div class="content-c-left">
+              <img src="/images/quality-2.png">
+              <div>
+                <p>17 VITE EKSPERIENCË</p>
+                <p>17 VITE SHËRBIM CILËSOR</p>
+                <p>17 VITE PËRKUSHTIM</p>
+              </div>
+            </div>
+
+            <div class="content-c-right">
+              <div>
+                <h4>Historia jonë</h4>
+                <p>Firma Zenelaj u krijua më 2003 në Vlorë në një nga kryqëzimet e rrugës Transballkanike ku vazhdon të operojë edhe sot. Pas një pune të palodhur, një pikë e dytë shërbimi u hap po në Vlorë. 
+                </p>
+              </div>
+
+              <div>
+                <h4>Misioni ynë</h4>
+                <p>Misioni ynë është të mbarojmë projektet e dhënë në cilësinë më të mirë te mundshme, të dëgjojmë dhe të respektojmë kërkesat e klienteve, të dorëzojmë projektet në kohën e duhur, të marrim opinionet e klientëve gjatë proçesit dhe të ekzekutojmë ndryshimet e propozuara.
+
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      
+      </main>
+
+      <script type="text/javascript">
+        function change_galleries(){
+          
+  
+          const projects = document.querySelector("#projects");
+          const samples = document.querySelector("#samples");
+          let gallery = document.querySelector('#gallery');
+          if (projects.checked){
+            console.log('called change galleries function, samples');
+              gallery.innerHTML = `
+              <div>
+                <a href="/images/project_1.png" data-lightbox="mygallery"><img src="/images/project_1_small.png"></a>
+                <p> Projekti A </p>
+            </div>
+            <div>
+                <a href="/images/project_2.png" data-lightbox="mygallery"><img src="/images/project_2_small.png"></a>
+                <p> Projekti B </p>
+            </div>
+            <div>
+                <a href="/images/project_11.png" data-lightbox="mygallery"><img src="/images/project_11_small.png"></a>
+                <p> Projekti C </p>
+            </div>
+            <div>
+                <a href="/images/project_4.png" data-lightbox="mygallery"><img src="/images/project_4_small.png"></a>
+                <p> Projekti D </p>
+            </div>
+            <div>
+                <a href="/images/project_5.png" data-lightbox="mygallery"><img src="/images/project_5_small.png"></a>
+                <p> Projekti E </p>
+            </div>
+            <div>
+                <a href="/images/project_6.png" data-lightbox="mygallery"><img src="/images/project_6_small.png"></a>
+                <p> Projekti F </p>
+            </div>
+            <div>
+                <a href="/images/project_7.png" data-lightbox="mygallery"><img src="/images/project_7_small.png"></a>
+                <p> Projekti G </p>
+            </div>
+            <div>
+                <a href="/images/project_8.png" data-lightbox="mygallery"><img src="/images/project_8_small.png"></a>
+                <p> Projekti H </p>
+            </div>
+            <div>
+                <a href="/images/project_9.png" data-lightbox="mygallery"><img src="/images/project_9_small.png"></a>
+                <p> Projekti I </p>
+            </div>
+            <div>
+                <a href="/images/project_10.png" data-lightbox="mygallery"><img src="/images/project_10_small.png"></a>
+                <p> Projekti J </p>
+            </div>
+
+            <div>
+                <a href="/images/project_11.png" data-lightbox="mygallery"><img src="/images/project_11_small.png"></a>
+                <p> Projekti K </p>
+            </div>
+
+            <div>
+                <a href="/images/project_12.png" data-lightbox="mygallery"><img src="/images/project_12_small.png"></a>
+                <p> Projekti L </p>
+            </div>
+
+            <div>
+                <a href="/images/project_13.png" data-lightbox="mygallery"><img src="/images/project_13_small.png"></a>
+                <p> Projekti M </p>
+            </div>
+
+            <div>
+                <a href="/images/project_14.png" data-lightbox="mygallery"><img src="/images/project_14_small.png"></a>
+                <p> Projekti N </p>
+            </div>
+              `
+              gallery.classList.add("gallery-7");
+          } else{
+            console.log('called change galleries function, projects');
+              gallery.innerHTML = `
+                <div>
+                  <a href="/images/sample_1.jpg" data-lightbox="mygallery"><img src="/images/sample_1_small.jpg"></a>
+                  <p>Materiali A</p>
+                </div>
+                <div>
+                  <a href="/images/sample_2.jpg" data-lightbox="mygallery"><img src="/images/sample_2_small.jpg"></a>
+                  <p>Materiali B</p>
+                </div>
+                <div>
+                  <a href="/images/sample_3.jpg" data-lightbox="mygallery"><img src="/images/sample_3_small.jpg"></a>
+                  <p>Materiali C</p>
+                </div>
+                <div>
+                  <a href="/images/sample_4.jpg" data-lightbox="mygallery"><img src="/images/sample_4_small.jpg"></a>
+                  <p>Materiali D</p>
+                </div>
+                <div>
+                  <a href="/images/sample_5.jpg" data-lightbox="mygallery"><img src="/images/sample_5_small.jpg"></a>
+                  <p>Materiali E</p>
+                </div>
+                <div>
+                  <a href="/images/sample_6.jpg" data-lightbox="mygallery"><img src="/images/sample_6_small.jpg"></a>
+                  <p>Materiali F</p>
+                </div>
+                <div>
+                  <a href="/images/sample_7.jpg" data-lightbox="mygallery"><img src="/images/sample_7_small.jpg"></a>
+                  <p>Materiali G</p>
+                </div>
+                <div>
+                  <a href="/images/sample_8.jpg" data-lightbox="mygallery"><img src="/images/sample_8_small.jpg"></a>
+                  <p>Materiali H</p>
+                </div>
+                <div>
+                  <a href="/images/sample_9.jpg" data-lightbox="mygallery"><img src="/images/sample_9_small.jpg"></a>
+                  <p>Materiali I</p>
+                </div>
+                <div>
+                  <a href="/images/sample_2.jpg" data-lightbox="mygallery"><img src="/images/sample_2_small.jpg"></a>
+                  <p>Materiali J</p>
+                </div>
+              `
+              gallery.classList.remove("gallery-7");
+          }
+      }
+      </script>
+    </body>
+    </html>
